@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("./bases/reset.css");
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #2E5F1D;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.rrss a {
+    text-decoration: none;
+    color: #71AF53;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5%;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #71AF53;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+/* HOME */
+#inicio {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/assets/img/link-inicio.jpg");
+    background-size: cover; 
+    background-position: center center;
+    height: 100vh;
+}
+
+.presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    columns: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bienvenida {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #000000;
+}
+
+.presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #000000;
+}
+
+.presentacion h2 span{
+    font-size: 55px;
+    color:#71AF53;
+}
+
+.presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #71AF53;
+    border-radius: 40px;
+    font-weight:bold;
+    text-transform: uppercase;
+    transition: .5%;
+    color: #71AF53;
+}
+
+.presentacion a:hover {
+    background-color: #2E5F1D
+}
+
+/*SOBRE MI*/
+#sobremi {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    display: flex;
+}
+
+.portrait {
+    max-width: 500px;
+    margin-right: 40px;
+}
+
+.portrait img {
+    padding: 0%;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.sobremi {
+    margin: 0 40px;
+}
+
+.sobremi .titulo-sobremi {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    text-decoration-color: #000000;
+    text-decoration-thickness: 5px;
+}
+
+.sobremi h2 {
+    font-size: 34px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.sobremi p {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+/*HABILIDADES*/
+#habilidades {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    columns: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.contenedor {
+    margin: 10px;
+    width: 70%;
+    background-color: #ddd;
+  }
+  
+.skills {
+    text-align: center; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: white;
+  }
+  
+.valentia {width: 100%; background-color: #9c190f;} 
+.lucha {width: 100%; background-color: #558a33;} 
+.defensa {width: 98%; background-color: #d1b123;}
+.sociales {width: 3%; background-color: #1a82e4;} 
+
+/*Proyectos*/
+#proyectos {
+    height: 100vh;
+    margin: auto;
+}
+
+/*Contacto*/
+
+/*media queries*/
+@media screen and (max-width:550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    } 
+
+    .abrir-menu,
+    .cerrar-menu {
+        color: #71AF53;
+    }
+
+    .nav { 
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #2E5F1D;
+        padding: 2rem;
+    }
+
+    .nav.visible { 
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #71AF53;
+    }
+
+}
